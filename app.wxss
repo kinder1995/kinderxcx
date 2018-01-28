@@ -27,7 +27,7 @@ page{background:#d9d9d9;padding-bottom:20rpx;}
 .list{padding:0 40rpx;margin-top:40rpx;}
 .list .box{background:#fff;border-radius:10rpx;position:relative;box-shadow:0px 0px 30rpx rgba(0,0,0,0.15);padding-top:20rpx;overflow:hidden;}
 .list .box .title{font-size:26rpx;border-left:10rpx solid #e84c3d;padding-left:20rpx;margin-bottom:20rpx;}
-.list .box .ms{font-size:22rpx;padding:20rpx;background:#f4f4f4;border-top:1px solid #dee1e0;border-bottom:1px solid #dee1e0;line-height:42rpx;text-indent:2em;}
+.list .box .ms{font-size:24rpx;padding:20rpx;background:#f4f4f4;border-top:1px solid #dee1e0;border-bottom:1px solid #dee1e0;line-height:42rpx;text-indent:2em;}
 .list .box .bottom{padding:20rpx 20rpx;font-size:22rpx;}
 .list .box .bottom .iconfont{font-size:26rpx;display:inline-block;vertical-align:middle;margin-top:-4rpx;margin-right:10rpx;}
 .list .box .bottom .icon-biaoqian{font-size:34rpx;}
