@@ -1,0 +1,41 @@
+{
+    "pages": [
+        "pages/index/index",
+        "pages/web/web",
+        "pages/diary/diary",
+        "pages/details/details"
+    ],
+    "window": {
+        "backgroundTextStyle": "light",
+        "backgroundColor":"#d9d9d9",
+        "navigationBarBackgroundColor": "#fff",
+        "navigationBarTitleText": "KINDER博客",
+        "navigationBarTextStyle": "black",
+        "enablePullDownRefresh": true
+    },
+    "tabBar": {
+        "backgroundColor": "#262626",
+        "selectedColor": "#fff",
+        "color": "#999",
+        "list": [
+            {
+                "pagePath": "pages/index/index",
+                "iconPath":"images/home.png",
+                "selectedIconPath":"images/home_on.png",
+                "text": "首页"
+            },
+            {
+                "pagePath": "pages/web/web",
+                "iconPath": "images/web.png",
+                "selectedIconPath": "images/web_on.png",
+                "text": "前端技术"
+            },
+            {
+                "pagePath": "pages/diary/diary",
+                "iconPath": "images/diary.png",
+                "selectedIconPath": "images/diary_on.png",
+                "text": "工作日记"
+            }
+        ]
+    }
+}
