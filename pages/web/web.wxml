@@ -1,4 +1,4 @@
-<view class="list" wx:for="{{news}}">
+<view class="list" wx:for="{{news}}" wx:key="id">
     <view class="box">
         <navigator class="title" url="../details/details?Id={{item.id}}">{{item.title}}</navigator>
         <view class='ms'>{{item.seo_des}}</view>
