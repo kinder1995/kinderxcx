@@ -1,0 +1,15 @@
+<view class="list" wx:for="{{news}}">
+    <view class="box">
+        <navigator class="title" url="../details/details?Id={{item.id}}">{{item.title}}</navigator>
+        <view class='ms'>{{item.seo_des}}</view>
+        <view class="bottom">
+            <view class="data"><view class="iconfont icon-riqi"></view>{{item.create_time}}</view>
+            <view class="tag" wx:for="{{item.newsLabels}}" wx:for-item="label">
+                <view class="iconfont icon-biaoqian"></view>{{label.label}}
+            </view>
+            <navigator class="read" url="../details/details?Id={{item.id}}">阅读+</navigator>
+            <view class="clear"></view>
+        </view>
+    </view>
+</view>
+<view class="more" bindtap="getMore">点击查看更多</view>

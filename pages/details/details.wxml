@@ -1,11 +1,17 @@
 <!--pages/details/details.wxml-->
 <view class="list details">
     <view class="box">
-        <view class="title">标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题</view>
-        <view class="ms">一款可以根据当前页面地址生成二维码的插件。一款可以根据当前页面地址生成二维码的插件。一款可以根据当前页面地址生成二维码的插件。一款可以根据当前页面地址生成二维码的插件。一款可以根据当前页面地址生成二维码的插件。一款可以根据当前页面地址生成二维码的插件。一款可以根据当前页面地址生成二维码的插件。一款可以根据当前页面地址生成二维码的插件。一款可以根据当前页面地址生成二维码的插件。一款可以根据当前页面地址生成二维码的插件。一款可以根据当前页面地址生成二维码的插件。一款可以根据当前页面地址生成二维码的插件。一款可以根据当前页面地址生成二维码的插件。一款可以根据当前页面地址生成二维码的插件。一款可以根据当前页面地址生成二维码的插件。一款可以根据当前页面地址生成二维码的插件。一款可以根据当前页面地址生成二维码的插件。一款可以根据当前页面地址生成二维码的插件。</view>
+        <view class="title">{{ListDetails.title}}</view>
+        <view class="ms">
+           <import src="../../wxParse/wxParse.wxml"/> 
+        <view class="wxParse">
+              <template is="wxParse" data="{{wxParseData:content.nodes}}"/>
+        </view> 
+        <!-- {{ListDetails.content}} -->
+        </view>
         <view class="bottom">
-            <view class="data"><view class="iconfont icon-riqi"></view>2018-01-01</view>
-            <view class="tag"><view class="iconfont icon-biaoqian"></view>JS阻止冒泡事件</view>
+            <view class="data"><view class="iconfont icon-riqi"></view>{{ListDetails.create_time}}</view>
+            <view class="tag"><view class="iconfont icon-biaoqian"></view>{{ListDetails.label}}</view>
             <view class="clear"></view>
         </view>
     </view>

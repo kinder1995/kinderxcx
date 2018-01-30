@@ -21,12 +21,6 @@ Page({
         },
         success: function (res){
             var news = res.data.info;
-            var myabstract = [];
-            for (let i = 0; i < news.length; i++) {
-              console.log(i)
-              WxParse.wxParse('replyTemArray', 'html', news[i].abstract, that);
-              console.log(news[i].abstract);
-            }
             that.setData({
               news: news,
               res: res
@@ -63,7 +57,7 @@ Page({
           mytime_min: min,
           mytime_sec: sec
         });
-      })
+      },1000)
     },
     //点击加载更多
     getMore: function (e) {
