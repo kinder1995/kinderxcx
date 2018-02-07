@@ -34,7 +34,7 @@ Page({
             var status = res.data.status;
             if (status == 1) {
               var ListDetails = res.data.info;
-              var content = ListDetails.content;
+              var content = ListDetails.xcx_des;
               WxParse.wxParse('content', 'html', content, that,5);
               that.setData({
                 ListDetails: ListDetails,
