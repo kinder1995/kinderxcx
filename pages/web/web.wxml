@@ -4,7 +4,7 @@
         <view class='ms'>{{item.seo_des}}</view>
         <view class="bottom">
             <view class="data"><view class="iconfont icon-riqi"></view>{{item.create_time}}</view>
-            <view class="tag" wx:for="{{item.newsLabels}}" wx:for-item="label">
+            <view class="tag" wx:for="{{item.newsLabels}}" wx:for-item="label" wx:key="{{item}}">
                 <view class="iconfont icon-biaoqian"></view>{{label.label}}
             </view>
             <navigator class="read" url="../details/details?Id={{item.id}}">阅读+</navigator>
